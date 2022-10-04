@@ -1,4 +1,8 @@
 pipeline {
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk11'
+    }
     agent {
             any {
               image 'maven:3-alpine'
