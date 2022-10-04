@@ -1,7 +1,4 @@
 pipeline {
-   tools {
-    maven 'MavenTest'
-    }
     agent {
             any {
               image 'maven:3-alpine'
