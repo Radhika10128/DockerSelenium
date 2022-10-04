@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37384" started-at="2022-09-28T17:41:21 IST" finished-at="2022-09-28T17:41:58 IST">
+    <groups>
+    </groups>
+    <test name="HomePageTests1" duration-ms="37384" started-at="2022-09-28T17:41:21 IST" finished-at="2022-09-28T17:41:58 IST">
+      <class name="tests.HomePageTests">
+        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:tests.HomePageTests@467aecef]" name="setupDriver" is-config="true" duration-ms="14141" started-at="2022-09-28T17:41:21 IST" finished-at="2022-09-28T17:41:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="verifyReactHomePageTitle()[pri:0, instance:tests.HomePageTests@467aecef]" name="verifyReactHomePageTitle" duration-ms="22639" started-at="2022-09-28T17:41:35 IST" finished-at="2022-09-28T17:41:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReactHomePageTitle -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.HomePageTests@467aecef]" name="quitDriver" is-config="true" duration-ms="491" started-at="2022-09-28T17:41:58 IST" finished-at="2022-09-28T17:41:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.HomePageTests -->
+    </test> <!-- HomePageTests1 -->
+  </suite> <!-- Suite -->
+</testng-results>

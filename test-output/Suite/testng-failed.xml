@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="4" name="HomePageTests1(failed)" parallel="tests">
+    <parameter name="browser" value="CHROME"/>
+    <classes>
+      <class name="tests.HomePageTests">
+        <methods>
+          <include name="verifyReactHomePageTitle"/>
+          <include name="setupDriver"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- tests.HomePageTests -->
+    </classes>
+  </test> <!-- HomePageTests1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

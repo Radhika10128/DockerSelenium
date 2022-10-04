@@ -1,0 +1,19 @@
+Oct 02, 2022 9:25:58 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: Docker
+Oct 02, 2022 9:25:58 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3044.vb_940a_a_e4f72e
+Oct 02, 2022 9:25:58 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using E:\ReactAppAutomation\jenkins_slave\remoting as a remoting work directory
+Oct 02, 2022 9:25:59 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8082/]
+Oct 02, 2022 9:25:59 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Oct 02, 2022 9:25:59 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver isPortVisible
+WARNING: Connection refused: connect
+Oct 02, 2022 9:25:59 PM hudson.remoting.jnlp.Main$CuiListener error
+SEVERE: http://localhost:8082/ provided port:50000 is not reachable
+java.io.IOException: http://localhost:8082/ provided port:50000 is not reachable
+	at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.resolve(JnlpAgentEndpointResolver.java:311)
+	at hudson.remoting.Engine.innerRun(Engine.java:744)
+	at hudson.remoting.Engine.run(Engine.java:543)
+

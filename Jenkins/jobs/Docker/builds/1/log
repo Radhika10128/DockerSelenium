@@ -1,0 +1,11 @@
+Started by user [8mha:////4Dz2Z4B4JU/v1H+H2LFBpKWr3t0CfjRyk1s2ir/qI1I7AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9xJTczDwAawhpaMAAAAA=[0mReact App
+Running as SYSTEM
+Building remotely on [8mha:////4K9dIkBSWguxWVvQ4hfXMqSJFKEN2b0YfGpNpwNbxP0QAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQifZf85OzUIgB/U539xQAAAA==[0mDocker in workspace E:\ReactAppAutomation\jenkins_slave\workspace\Docker
+[Docker] $ cmd /c call C:\Users\HPWORL~1\AppData\Local\Temp\jenkins12186684817074447717.bat
+
+E:\ReactAppAutomation\jenkins_slave\workspace\Docker>docker ps 
+CONTAINER ID   IMAGE                 COMMAND                  CREATED      STATUS      PORTS                               NAMES
+757d175b3c89   jenkins/jenkins:lts   "/usr/bin/tini -- /u…"   2 days ago   Up 2 days   50000/tcp, 0.0.0.0:8082->8080/tcp   sad_taussig
+
+E:\ReactAppAutomation\jenkins_slave\workspace\Docker>exit 0 
+Finished: SUCCESS

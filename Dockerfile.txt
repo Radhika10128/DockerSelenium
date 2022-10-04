@@ -1,0 +1,10 @@
+FROM openjdk:11
+FROM alpine:latest
+RUN apk add --no-cache curl jq
+WORKDIR E:\ReactAppAutomation
+COPY target/selenium-docker.jar selenium-docker.jar
+COPY target/selenium-docker-tests.jar selenium-docker-tests.jar
+COPY target/dependency dependency
+COPY testng.xml testng.xml
+Add healthcheck.sh healthcheck.sh
+ENTRYPOINT sh healthcheck.sh
