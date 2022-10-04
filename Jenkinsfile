@@ -2,6 +2,12 @@ pipeline {
     agent none
     stages {
         stage('Build Jar') {
+            agent {
+                docker {
+                    image 'maven:3-alpine'
+                    args '-v $HOME/.m2:/root/.m2'
+                }
+            }
             steps {
                 sh "mvn clean package -DskipTests"
                 sh "mvn dependency:copy-dependencies"
@@ -9,15 +15,16 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                sh "docker build -t docker-selenium-project -f ./DockerFile ."
+                sh 'docker build -t radhika2022/docker-selenium-project -f ./DockerFile ."
             }
         }
         stage('Push Image') {
             steps {
-               withCredentials([usernameColonPassword(credentialsId: 'dockerHub', passwordVariable: 'pass', usernameVariable: 'user')]){
-               		sh "docker login --username=${user} --password=${pass}"
-               		sh "docker push radhika2022/docker-selenium-project:latest"
-               }
+               withCredentials([string(credentialsId: 'dockerHub', variable: 'dockerhubpwd')]) {
+                   sh 'docker login -u radhika2022 -p ${dockerhubpwd}'
+
+                }
+                   sh 'docker push radhika2022/docker-selenium-project'
             }
         }
     }
