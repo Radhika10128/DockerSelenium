@@ -1,5 +1,8 @@
 pipeline {
-    agent none
+    agent any
+    tools{
+        maven 'maven_3_5_0'
+    }
     stages {
         stage('Build Jar') {
             steps {
