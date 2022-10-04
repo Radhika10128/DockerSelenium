@@ -27,19 +27,8 @@ public class Base {
 		String host = "localhost";
 //		String projectPath = System.getProperty("user.dir");
 //		System.setProperty("webdriver.chrome.driver", projectPath+"/chrome/chromedriver.exe");
-//		if(System.getProperty("HUB_HOST")!=null) {
-//			host = System.getProperty("HUB_HOST");
-//		}
-		
-//		host = System.getProperty("SE_EVENT_BUS_HOST");
+
 		String completeURL = "http://127.0.0.1:4444";
-		
-		//if(System.getProperty("BROWSER")!=null && System.getProperty("BROWSER").equalsIgnoreCase("chrome")) {
-//			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("disable-infobars");
-//			options.addArguments("ignore-certificate-errors");
-//			options.addArguments("--disable-web-security");
-//			options.addArguments("--no-proxy-server");
 		
 		DesiredCapabilities capabilities= new DesiredCapabilities();
 		if(browser.equalsIgnoreCase("chrome")) {
@@ -49,12 +38,7 @@ public class Base {
 			capabilities.setPlatform(Platform.LINUX);
 			capabilities.setBrowserName(BrowserType.FIREFOX);
 		}
-			driver = new RemoteWebDriver(new URL(completeURL), capabilities);
-		//}
-//		else if(System.getProperty("BROWSER")!=null && System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
-//			FirefoxOptions options = new FirefoxOptions();
-//			driver = new RemoteWebDriver(new URL(completeURL), options);
-//		}
+		driver = new RemoteWebDriver(new URL(completeURL), capabilities);
 //		driver = new ChromeDriver();
 //		driver.manage().window().maximize();
 //		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);

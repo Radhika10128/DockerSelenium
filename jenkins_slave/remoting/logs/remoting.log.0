@@ -1,0 +1,24 @@
+Oct 04, 2022 12:05:00 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: Docker
+Oct 04, 2022 12:05:00 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3044.vb_940a_a_e4f72e
+Oct 04, 2022 12:05:00 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using E:\ReactAppAutomation\jenkins_slave\remoting as a remoting work directory
+Oct 04, 2022 12:05:20 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: WebSocket connection open
+Oct 04, 2022 12:05:20 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+Oct 04, 2022 1:30:36 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Read side closed
+Oct 04, 2022 1:30:36 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Read side closed
+Oct 04, 2022 1:30:36 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated
+Oct 04, 2022 1:30:37 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Performing onReconnect operation.
+Oct 04, 2022 1:30:37 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: onReconnect operation completed.
+Oct 04, 2022 1:30:37 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: WebSocket connection open
+Oct 04, 2022 1:30:37 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
