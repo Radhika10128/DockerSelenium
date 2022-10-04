@@ -9,13 +9,13 @@ pipeline {
                 }
             }
             steps {
-                sh "mvn clean package -DskipTests"
-                sh "mvn dependency:copy-dependencies"
+                sh 'mvn clean package -DskipTests'
+                sh 'mvn dependency:copy-dependencies'
             }
         }
         stage('Build Image') {
             steps {
-                sh 'docker build -t radhika2022/docker-selenium-project -f ./DockerFile ."
+                sh 'docker build -t radhika2022/docker-selenium-project -f ./DockerFile .'
             }
         }
         stage('Push Image') {
