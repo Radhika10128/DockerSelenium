@@ -1,13 +1,9 @@
 pipeline {
     agent {
             any {
-              image 'maven:3-alpine'
-              args '-v $HOME/.m2:/root/.m2'
+             image 'maven:3.8.1-adoptopenjdk-11'
+             args '-v /root/.m2:/root/.m2'
          }
-    }
-    tools {
-        maven 'Maven 3.8.1'
-        jdk 'jdk11'
     }
     stages {
         stage('Build Jar') {
