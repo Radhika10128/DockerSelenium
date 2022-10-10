@@ -5,6 +5,9 @@ pipeline {
              args '-v /root/.m2:/root/.m2'
          }
     }
+    tools {
+    maven 'Maven 3.8.1'
+  }
     stages {
         stage('Build Jar') {
             steps {
