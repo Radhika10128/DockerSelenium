@@ -12,10 +12,8 @@ pipeline {
     stages {
         stage('Build Jar') {
             steps {
-                container ('maven'){
                 sh 'mvn clean package -DskipTests'
                 sh 'mvn dependency:copy-dependencies'
-                }
             }
         }
         stage('Build Image') {
